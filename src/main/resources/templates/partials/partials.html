@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en" xmlns:sec="http://thymeleaf.org/extras/spring-security">
+
+// head partial.
+<head th:fragment="head">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>housepanda</title>
+    <!-- Copyright © 2014 Monotype Imaging Inc. All rights reserved -->
+    <link href="https://cdn.jsdelivr.net/npm/boosted@5.3.3/dist/css/orange-helvetica.min.css" rel="stylesheet" integrity="sha384-A0Qk1uKfS1i83/YuU13i2nx5pk79PkIfNFOVzTcjCMPGKIDj9Lqx9lJmV7cdBVQZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/boosted@5.3.3/dist/css/boosted.min.css" rel="stylesheet" integrity="sha384-laZ3JUZ5Ln2YqhfBvadDpNyBo7w5qmWaRnnXuRwNhJeTEFuSdGbzl4ZGHAEnTozR" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <link rel="stylesheet" th:href="@{/css/navbar.css}">
+</head>
+
+
+// top nav partial.
+<nav th:fragment="navbar" class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-brand me-auto">
+            <a class="stretched-link" href="#">
+                <img src="https://i.imgur.com/HMIGemd.png" width="50" height="50" alt="Boosted - Back to Home" loading="lazy">
+            </a>
+        </div>
+        <form class="d-flex navbar-item" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+// footer partial.
+<footer th:fragment="footer" class="footer navbar" data-bs-theme="light">
+    <h2 class="visually-hidden">Sitemap & information</h2>
+    <div class="container-xxl footer-terms">
+        <ul class="navbar-nav gap-md-3">
+            <li class="fw-bold">© housepanda 2024</li>
+            <li><a class="nav-link" href="#">Terms and conditions</a></li>
+            <li><a class="nav-link" href="#">Privacy</a></li>
+            <li><a class="nav-link" href="#">Accessibility statement</a></li>
+            <li><a class="nav-link" href="#">Cookie policy</a></li>
+        </ul>
+    </div>
+</footer>
+
+<div th:fragment="scripts">
+    <script src="https://cdn.jsdelivr.net/npm/boosted@5.3.3/dist/js/boosted.bundle.min.js" integrity="sha384-3RoJImQ+Yz4jAyP6xW29kJhqJOE3rdjuu9wkNycjCuDnGAtC/crm79mLcwj1w2o/" crossorigin="anonymous"></script>
+</div>
